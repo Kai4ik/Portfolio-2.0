@@ -20,6 +20,7 @@ const config: Config = {
         dark: "rgb(16, 24, 32)",
         creamy: "rgb(204, 214, 246)",
         "american-yellow": "#f4b301",
+        terracotta: "#CF4A62",
       },
     },
   },

@@ -9,7 +9,7 @@ import ToolkitSection from "@/components/homePage/toolkitSection";
 
 export default function Home() {
   return (
-    <main className="w-screen bg-dark relative">
+    <main className="w-screen  relative z-30">
       <div className=" flex flex-col gap-y-8 lg:gap-y-16 px-8 lg:px-[8vw] pt-12 pb-[20vh] w-full overflow-x-hidden text-creamy">
         <div className="flex flex-col gap-y-8 items-center lg:flex-row lg:gap-x-24">
           <div className="w-full h-[50vh] overflow-hidden relative md:w-[50%] lg:h-[80vh] lg:w-[40%] ">
@@ -58,21 +58,32 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-y-8 lg:flex-row lg:flex-wrap lg:justify-between  lg:gap-y-16">
-            <div className="flex flex-col gap-y-8 lg:basis-[45%]">
-              <figure>
-                <embed src="https://wakatime.com/share/@Kai4ik/ac58e797-5179-4589-9ac5-65cce20cb91a.svg"></embed>
-              </figure>
-              <p className={`${latoReg.className} text-lg `}>
+            <div className="flex flex-col md:gap-y-8 lg:basis-[45%]">
+              <div className=" relative w-full h-[35vh] md:h-[50vh] ">
+                <Image
+                  src="https://wakatime.com/share/@Kai4ik/5d13fc09-4404-40a1-aacf-c835bc2464d2.png"
+                  alt="Chart that shows coding activity of Kairat Orozobekov over last 7 days (in hours)"
+                  fill
+                  className="object-contain absolute"
+                />
+              </div>
+              <p className={`${latoReg.className} text-lg relative`}>
                 Behold my weekly code-o-meter, tracking the hours I&apos;ve
                 spent &apos;talking&apos; to my computer - my way of proving
                 that I&apos;m in a committed relationship with my code!
               </p>
             </div>
-            <div className="flex flex-col gap-y-8 lg:basis-[45%]">
-              <span className="w-full h-[0.5px] bg-creamy lg:hidden"> </span>
-              <figure>
-                <embed src="https://wakatime.com/share/@Kai4ik/3d84a3c9-2361-4b57-abb2-b1ca73155a02.svg"></embed>
-              </figure>
+            <div className="flex flex-col md:gap-y-8 lg:basis-[45%]">
+              <div className=" relative w-full h-[35vh] md:h-[50vh] ">
+                <span className="w-full h-[0.5px] bg-creamy lg:hidden"> </span>
+                <Image
+                  src="https://wakatime.com/share/@Kai4ik/27248216-815e-4844-b3c7-001bf1631e59.png"
+                  alt="Chart that shows languages used by Kairat Orozobekov over last 7 days"
+                  fill
+                  className="object-contain absolute"
+                />
+              </div>
+
               <p className={`${latoReg.className} text-lg `}>
                 Explore my &apos;Language Mashup&apos; chart, a wild mixtape of
                 coding languages, libraries, and frameworks I&apos;ve been
@@ -80,11 +91,17 @@ export default function Home() {
                 notes!
               </p>
             </div>
-            <div className="flex flex-col gap-y-8 lg:basis-[45%]">
-              <span className="w-full h-[0.5px] bg-creamy lg:hidden"> </span>
-              <figure>
-                <embed src="https://wakatime.com/share/@Kai4ik/57d720bb-6d2f-4a12-b934-f2fc7a39d549.svg"></embed>
-              </figure>
+            <div className="flex flex-col md:gap-y-8 lg:basis-[45%]">
+              <div className=" relative w-full h-[35vh] md:h-[50vh] ">
+                <span className="w-full h-[0.5px] bg-creamy lg:hidden"> </span>
+                <Image
+                  src="https://wakatime.com/share/@Kai4ik/243c96f3-d6e1-4848-b1b9-7ece21e85720.png"
+                  alt="Chart that shows languages used by kairat Orozobekov over last 7 days"
+                  fill
+                  className="object-contain absolute"
+                />
+              </div>
+
               <p className={`${latoReg.className} text-lg `}>
                 Dive into my &apos;IDEology&apos; chart, and you&apos;ll see my
                 coding life isn&apos;t just about languages; it&apos;s a
