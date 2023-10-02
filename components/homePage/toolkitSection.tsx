@@ -45,7 +45,7 @@ export default async function ToolkitSection(): Promise<JSX.Element> {
             {toolkitSectionData.subtitle}
           </p>
         </div>
-        <div className="flex flex-col gap-y-4 md:gap-y-12 lg:flex-row lg:flex-wrap lg:justify-between lg:gap-y-16">
+        <div className="flex flex-col gap-y-12 lg:flex-row lg:flex-wrap lg:justify-between lg:gap-y-16">
           {toolkitSectionData.subsections.map((subsection) => (
             <div
               className="flex flex-col gap-y-8 lg:basis-[45%] 3xl:basis-[30%]"

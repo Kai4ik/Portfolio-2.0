@@ -10,7 +10,7 @@ import ToolkitSection from "@/components/homePage/toolkitSection";
 export default function Home() {
   return (
     <main className="w-screen bg-dark relative">
-      <div className="flex flex-col gap-y-8 lg:gap-y-16 px-8 lg:px-[8vw] py-12 w-full overflow-x-hidden text-creamy">
+      <div className=" flex flex-col gap-y-8 lg:gap-y-16 px-8 lg:px-[8vw] pt-12 pb-[20vh] w-full overflow-x-hidden text-creamy">
         <div className="flex flex-col gap-y-8 items-center lg:flex-row lg:gap-x-24">
           <div className="w-full h-[50vh] overflow-hidden relative md:w-[50%] lg:h-[80vh] lg:w-[40%] ">
             <Image
@@ -57,7 +57,7 @@ export default function Home() {
               7 days of my life.
             </p>
           </div>
-          <div className="flex flex-col lg:flex-row lg:flex-wrap lg:justify-between  lg:gap-y-16">
+          <div className="flex flex-col gap-y-8 lg:flex-row lg:flex-wrap lg:justify-between  lg:gap-y-16">
             <div className="flex flex-col gap-y-8 lg:basis-[45%]">
               <figure>
                 <embed src="https://wakatime.com/share/@Kai4ik/ac58e797-5179-4589-9ac5-65cce20cb91a.svg"></embed>
@@ -99,7 +99,7 @@ export default function Home() {
         <ToolkitSection />
       </div>
 
-      <div className="sticky flex flex-col gap-y-4 p-8 lg:px-[8vw]  w-full bottom-0 text-creamy bg-dark">
+      <div className="fixed flex flex-col justify-center gap-y-4 h-[15vh] px-8 lg:px-[8vw]  w-full bottom-0 text-creamy bg-dark">
         <div>
           <h1 className={`${kanitMB.className} text-4xl `}>
             Kairat Orozobekov
