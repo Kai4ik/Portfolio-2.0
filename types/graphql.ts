@@ -3424,7 +3424,6 @@ export type ToolkitSubsectionWhereUniqueInput = {
 export type ToolkitTechnology = {
   __typename?: 'ToolkitTechnology';
   confidenceLevel: ConfidenceLevel;
-  hoverColor: Scalars['String']['output'];
   iconClassName: Scalars['String']['output'];
   /** The unique identifier */
   id: Scalars['ID']['output'];
@@ -3452,7 +3451,6 @@ export type ToolkitTechnologyConnection = {
 
 export type ToolkitTechnologyCreateInput = {
   confidenceLevel: ConfidenceLevel;
-  hoverColor: Scalars['String']['input'];
   iconClassName: Scalars['String']['input'];
   technologyName: Scalars['String']['input'];
 };
@@ -3500,25 +3498,6 @@ export type ToolkitTechnologyManyWhereInput = {
   confidenceLevel_not?: InputMaybe<ConfidenceLevel>;
   /** All values that are not contained in given list. */
   confidenceLevel_not_in?: InputMaybe<Array<InputMaybe<ConfidenceLevel>>>;
-  hoverColor?: InputMaybe<Scalars['String']['input']>;
-  /** All values containing the given string. */
-  hoverColor_contains?: InputMaybe<Scalars['String']['input']>;
-  /** All values ending with the given string. */
-  hoverColor_ends_with?: InputMaybe<Scalars['String']['input']>;
-  /** All values that are contained in given list. */
-  hoverColor_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-  /** Any other value that exists and is not equal to the given value. */
-  hoverColor_not?: InputMaybe<Scalars['String']['input']>;
-  /** All values not containing the given string. */
-  hoverColor_not_contains?: InputMaybe<Scalars['String']['input']>;
-  /** All values not ending with the given string */
-  hoverColor_not_ends_with?: InputMaybe<Scalars['String']['input']>;
-  /** All values that are not contained in given list. */
-  hoverColor_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-  /** All values not starting with the given string. */
-  hoverColor_not_starts_with?: InputMaybe<Scalars['String']['input']>;
-  /** All values starting with the given string. */
-  hoverColor_starts_with?: InputMaybe<Scalars['String']['input']>;
   iconClassName?: InputMaybe<Scalars['String']['input']>;
   /** All values containing the given string. */
   iconClassName_contains?: InputMaybe<Scalars['String']['input']>;
@@ -3581,8 +3560,6 @@ export type ToolkitTechnologyManyWhereInput = {
 export enum ToolkitTechnologyOrderByInput {
   ConfidenceLevelAsc = 'confidenceLevel_ASC',
   ConfidenceLevelDesc = 'confidenceLevel_DESC',
-  HoverColorAsc = 'hoverColor_ASC',
-  HoverColorDesc = 'hoverColor_DESC',
   IconClassNameAsc = 'iconClassName_ASC',
   IconClassNameDesc = 'iconClassName_DESC',
   IdAsc = 'id_ASC',
@@ -3671,7 +3648,6 @@ export type ToolkitTechnologyParentWhereUniqueInput = {
 
 export type ToolkitTechnologyUpdateInput = {
   confidenceLevel?: InputMaybe<ConfidenceLevel>;
-  hoverColor?: InputMaybe<Scalars['String']['input']>;
   iconClassName?: InputMaybe<Scalars['String']['input']>;
   technologyName?: InputMaybe<Scalars['String']['input']>;
 };
@@ -3689,7 +3665,6 @@ export type ToolkitTechnologyUpdateManyInlineInput = {
 
 export type ToolkitTechnologyUpdateManyInput = {
   confidenceLevel?: InputMaybe<ConfidenceLevel>;
-  hoverColor?: InputMaybe<Scalars['String']['input']>;
   iconClassName?: InputMaybe<Scalars['String']['input']>;
   technologyName?: InputMaybe<Scalars['String']['input']>;
 };
@@ -3768,25 +3743,6 @@ export type ToolkitTechnologyWhereInput = {
   confidenceLevel_not?: InputMaybe<ConfidenceLevel>;
   /** All values that are not contained in given list. */
   confidenceLevel_not_in?: InputMaybe<Array<InputMaybe<ConfidenceLevel>>>;
-  hoverColor?: InputMaybe<Scalars['String']['input']>;
-  /** All values containing the given string. */
-  hoverColor_contains?: InputMaybe<Scalars['String']['input']>;
-  /** All values ending with the given string. */
-  hoverColor_ends_with?: InputMaybe<Scalars['String']['input']>;
-  /** All values that are contained in given list. */
-  hoverColor_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-  /** Any other value that exists and is not equal to the given value. */
-  hoverColor_not?: InputMaybe<Scalars['String']['input']>;
-  /** All values not containing the given string. */
-  hoverColor_not_contains?: InputMaybe<Scalars['String']['input']>;
-  /** All values not ending with the given string */
-  hoverColor_not_ends_with?: InputMaybe<Scalars['String']['input']>;
-  /** All values that are not contained in given list. */
-  hoverColor_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
-  /** All values not starting with the given string. */
-  hoverColor_not_starts_with?: InputMaybe<Scalars['String']['input']>;
-  /** All values starting with the given string. */
-  hoverColor_starts_with?: InputMaybe<Scalars['String']['input']>;
   iconClassName?: InputMaybe<Scalars['String']['input']>;
   /** All values containing the given string. */
   iconClassName_contains?: InputMaybe<Scalars['String']['input']>;
@@ -4353,7 +4309,7 @@ export enum _SystemDateTimeFieldVariation {
 export type HomePageToolkitSectionDataQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type HomePageToolkitSectionDataQuery = { __typename?: 'Query', homePageToolkitSections: Array<{ __typename?: 'HomePageToolkitSection', subtitle: string, title: string, subsections: Array<{ __typename?: 'ToolkitSubsection', id: string, subtitle: string, title: string, listOfTechnologies: Array<{ __typename?: 'ToolkitTechnology', id: string, technologyName: string, iconClassName: string, hoverColor: string, confidenceLevel: ConfidenceLevel }> }> }> };
+export type HomePageToolkitSectionDataQuery = { __typename?: 'Query', homePageToolkitSections: Array<{ __typename?: 'HomePageToolkitSection', subtitle: string, title: string, subsections: Array<{ __typename?: 'ToolkitSubsection', id: string, subtitle: string, title: string, listOfTechnologies: Array<{ __typename?: 'ToolkitTechnology', id: string, technologyName: string, iconClassName: string, confidenceLevel: ConfidenceLevel }> }> }> };
 
 
-export const HomePageToolkitSectionDataDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"HomePageToolkitSectionData"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"homePageToolkitSections"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"subtitle"}},{"kind":"Field","name":{"kind":"Name","value":"title"}},{"kind":"Field","name":{"kind":"Name","value":"subsections"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"subtitle"}},{"kind":"Field","name":{"kind":"Name","value":"title"}},{"kind":"Field","name":{"kind":"Name","value":"listOfTechnologies"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"first"},"value":{"kind":"IntValue","value":"50"}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"technologyName"}},{"kind":"Field","name":{"kind":"Name","value":"iconClassName"}},{"kind":"Field","name":{"kind":"Name","value":"hoverColor"}},{"kind":"Field","name":{"kind":"Name","value":"confidenceLevel"}}]}}]}}]}}]}}]} as unknown as DocumentNode<HomePageToolkitSectionDataQuery, HomePageToolkitSectionDataQueryVariables>;
+export const HomePageToolkitSectionDataDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"HomePageToolkitSectionData"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"homePageToolkitSections"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"subtitle"}},{"kind":"Field","name":{"kind":"Name","value":"title"}},{"kind":"Field","name":{"kind":"Name","value":"subsections"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"subtitle"}},{"kind":"Field","name":{"kind":"Name","value":"title"}},{"kind":"Field","name":{"kind":"Name","value":"listOfTechnologies"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"first"},"value":{"kind":"IntValue","value":"50"}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"technologyName"}},{"kind":"Field","name":{"kind":"Name","value":"iconClassName"}},{"kind":"Field","name":{"kind":"Name","value":"confidenceLevel"}}]}}]}}]}}]}}]} as unknown as DocumentNode<HomePageToolkitSectionDataQuery, HomePageToolkitSectionDataQueryVariables>;

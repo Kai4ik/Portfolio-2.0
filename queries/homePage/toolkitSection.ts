@@ -13,7 +13,6 @@ const GET_TOOLKIT_SECTION_DATA = gql(`
           id
           technologyName
           iconClassName
-          hoverColor
           confidenceLevel
         }
       }
