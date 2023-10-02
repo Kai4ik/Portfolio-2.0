@@ -5,7 +5,7 @@ import { getClient } from "@/utils/apollo";
 import GET_TOOLKIT_SECTION_DATA from "@/queries/homePage/toolkitSection";
 import { Fragment } from "react";
 
-export default async function ToolkitSection() {
+export default async function ToolkitSection(): Promise<JSX.Element> {
   const { loading, error, data } = await getClient().query({
     query: GET_TOOLKIT_SECTION_DATA,
   });
@@ -76,4 +76,5 @@ export default async function ToolkitSection() {
       </section>
     );
   }
+  return <></>;
 }
