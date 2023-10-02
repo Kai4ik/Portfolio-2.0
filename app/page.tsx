@@ -95,8 +95,7 @@ export default function Home() {
           </div>
           <span className="w-full h-[0.5px] bg-creamy"> </span>
         </section>
-
-        {/* @ts-expect-error Async Server Component */}
+        {/* @ts-expect-error Server Component */}
         <ToolkitSection />
       </div>
 
