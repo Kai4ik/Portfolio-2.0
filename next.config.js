@@ -2,7 +2,7 @@
 
 const nextConfig = {
   images: {
-    domains: ["wakatime.com"],
+    domains: ["wakatime.com", "res.cloudinary.com"],
   },
 };
 
