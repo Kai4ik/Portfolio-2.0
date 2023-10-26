@@ -29,13 +29,13 @@ export default function Accordion({ content }: Props): JSX.Element {
     const expandAnimation = useSpring({
         from: {
             opacity: 0,
-            maxHeight: "0px"
+            maxHeight: 0
         },
         to: {
             opacity: expanded ? 1 : 0,
-            maxHeight: expanded ? "1000vh" : "0px"
+            maxHeight: expanded ? 5000 : 0
         },
-        config: { duration: expanded ? "500" : "1000" }
+        config: { duration: expanded ? 500 : 1000 }
     });
 
 
