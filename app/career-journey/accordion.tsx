@@ -26,19 +26,24 @@ interface Props {
 export default function Accordion({ content }: Props): JSX.Element {
     const [expanded, setExpanded] = useState(false)
 
-    const openAnimation = useSpring({
-        opacity: expanded ? "1" : "0",
-        maxHeight: expanded ? "1000vh" : "0",
+    const expandAnimation = useSpring({
+        from: {
+            opacity: 0,
+            maxHeight: "0px"
+        },
+        to: {
+            opacity: expanded ? 1 : 0,
+            maxHeight: expanded ? "1000vh" : "0px"
+        },
         config: { duration: expanded ? "500" : "1000" }
     });
-
 
 
     return <div className='flex flex-col gap-y-4'>
         <div className={`flex flex-col gap-y-4 rounded-lg p-4 backdrop-blur-[500px] text-creamy text-lg lg:text-xl transition-colors duration-500 ease-out ${latoReg.className} `}>
             <RichText content={content !== null && content !== undefined ? content.raw : ""} renderers={{
                 p: ({ children }) => <p>{children}</p>,
-                class: ({ children }) => <animated.div style={openAnimation} className={` flex flex-col gap-y-4 transition-all ease-linear overflow-y-hidden`}>{children}</animated.div>
+                class: ({ children }) => <animated.div style={expandAnimation} className={` flex flex-col gap-y-4 transition-all ease-linear overflow-y-hidden`}>{children}</animated.div>
             }} />
         </div>
         <div className='w-full lg:max-w-[40%]' onClick={() => setExpanded((prev) => !prev)}>
