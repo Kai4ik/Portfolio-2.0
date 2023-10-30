@@ -23,7 +23,6 @@ export default function RootLayout({
     <html lang="en">
       <body className="w-screen bg-dark overflow-x-hidden">
         <Providers>
-
           <LocoScrollIntegration />
           <GsapCircleAnimation />
 

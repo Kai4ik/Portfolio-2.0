@@ -29,15 +29,24 @@ export default function Home() {
               A little bit about myself
             </h3>
             <p className={`${latoReg.className} text-lg lg:text-2xl`}>
-              I&apos;m a full-stack web developer located in Toronto who really
-              loves working with all layers of the stack. Whether it&apos;s
-              front-end or back-end, the only thing that matters to me is
-              building efficient user-friendly web applications that meet all
-              client requirements.
-              <br /> I am passionate about coding which gives me freedom of
-              creativity and at the same time requires applying logical thinking
-              when solving complex problems. <br /> Let&apos;s make something
-              special together!
+              Based in the heart of Toronto, I&apos;m a full-stack developer and data engineer. Now, you might be wondering,
+              how did I end up here?
+              <br />
+              Well, let&apos;s rewind the clock a bit, back to 2019 when I ventured into the world of college
+              with almost zero background in computer science. I had my doubts, and I secretly wondered if I&apos;d drop out after
+              the first semester.
+              <br />
+              Fast forward four years, and there I was, on a Thursday evening, tuning in to the Next.js conference, testing out the
+              latest Astro.js, diving into Rust, and hitting up IT meetups and conferences. It&apos;s safe to say things worked out quite nicely!
+              <br />
+              See, when I first dipped my toes into the IT world, I had this idea that it was all about math, analytics, and logic.
+              Don&apos;t get me wrong; I&apos;m not terrible at that stuff. It&apos;s just that I&apos;m also a creative soul,
+              and I had this nagging worry that I&apos;d burn out eventually.
+
+              But over the years, I&apos;ve discovered that coding is more than just crunching numbers.
+              It&apos;s a canvas for creativity. It&apos;s like having the best of both worlds: the
+              freedom to express myself and the thrill of tackling brain-teasing problems.
+              What could be better, right?
             </p>
           </div>
         </div>

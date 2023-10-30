@@ -23,9 +23,6 @@ const config: Config = {
         "green-pigment": "#1DB954",
         terracotta: "#CF4A62",
       },
-      transitionProperty: {
-        "max-height": "max-height",
-      },
     },
   },
   plugins: [],
