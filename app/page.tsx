@@ -3,11 +3,19 @@ import { kanitMB, latoReg } from "@/assets/fonts";
 
 // Next.js specific
 import Image from "next/image";
+import { Metadata } from "next";
 
 // components
 import ToolkitSection from "@/components/homePage/toolkitSection";
 import CodingChroniclesSection from "@/components/homePage/codingChroniclesSection";
 import PageScroller from "@/components/layout/pageScroller";
+
+
+export const metadata: Metadata = {
+  title: 'Kairat Orozobekov - Software Developer / Data Engineer based in Toronto',
+  description: "Welcome to Kairat Orozobekov's portfolio website, the place where I proudly display my recent work experience and projects. Let's take a journey through my professional adventures!",
+}
+
 
 export default function Home() {
   return (

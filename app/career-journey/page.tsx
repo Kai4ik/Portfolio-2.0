@@ -12,7 +12,12 @@ import GET_CAREER_JOURNEY_DATA from "@/queries/career-journey/experience";
 // Next.js specific
 import Image from "next/image";
 import Link from 'next/link';
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Kairat Orozobekov's Work Experience",
+  description: "Welcome to Kairat Orozobekov's portfolio website, the place where I proudly display my recent work experience and projects. Let's take a journey through my professional adventures!",
+}
 
 export default async function CareerJourney(): Promise<JSX.Element> {
   const { loading, error, data } = await getClient().query({
