@@ -113,7 +113,7 @@ export default function Menu({ openMenu }: Props): JSX.Element {
                     }}
                 />
             </div>
-            <ul className={`${kanitMB.className} w-full text-4xl z-20 uppercase flex flex-col gap-y-8 lg:gap-y-4 basis-full lg:basis-1/2`}>
+            <ul className={`${kanitMB.className} w-full text-4xl z-20 uppercase flex flex-col gap-y-8 lg:gap-y-4 lg:basis-1/2`}>
                 <Link href='/' >
                     <li className="text-creamy cursor-pointer hover:text-terracotta transition-colors duration-300 ease-in-out">home</li>
                 </Link>
