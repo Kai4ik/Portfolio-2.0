@@ -90,7 +90,7 @@ export default function Navbar(): JSX.Element {
 
     return <>
         <nav className={`fixed top-0 ${visible ? "flex" : "hidden"
-            } items-center justify-between py-4 px-8 lg:px-[8vw] w-full overflow-x-hidden z-[80]`}>
+            } items-center justify-between py-4 px-8 bg-dark shadow-sm shadow-gray-700	 lg:px-[8vw] w-full overflow-x-hidden z-[80]`}>
             <div className="relative w-[70px] h-[70px] -left-5">
                 <Image
                     src={`https://res.cloudinary.com/dmcvpmmuh/image/upload/f_auto,q_auto/v1/OK%20Portfolio%20Content/m5wptab4ry7tkgyjalgh`}
