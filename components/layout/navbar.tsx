@@ -64,9 +64,9 @@ export default function Navbar(): JSX.Element {
         const hambBtnTopLine = document.getElementById("hambBtnTopLine");
         const hambBtnBottomLine = document.getElementById("hambBtnBottomLine");
         if (hambBtnTopLine && hambBtnBottomLine) {
-            hambBtnTopLine.classList.toggle("mb-0");
-            hambBtnTopLine.classList.toggle("rotate-45");
-            hambBtnBottomLine.classList.toggle("-mt-[1px]");
+            hambBtnTopLine.classList.toggle("!mb-0");
+            hambBtnTopLine.classList.toggle("Rotate-45");
+            hambBtnBottomLine.classList.toggle("!-mt-[1px]");
             hambBtnBottomLine.classList.toggle("-rotate-45");
         }
 
