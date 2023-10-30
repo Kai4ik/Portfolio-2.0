@@ -115,7 +115,7 @@ export default function Menu({ openMenu, menuToggle }: Props): JSX.Element {
                     }}
                 />
             </div>
-            <div className='w-full h-screen overflow-y-scroll absolute landscape:top-20 md:landscape:top-0 py-40 lg:top-0 px-8 lg:px-[8vw] left-0
+            <div className='w-full h-screen overflow-y-scroll absolute landscape:top-20 lg:landscape:top-0 py-40 lg:top-0 px-8 lg:px-[8vw] left-0
              flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-y-8 '>
                 <ul className={`${kanitMB.className} w-full text-4xl z-20 uppercase flex flex-col gap-y-8 lg:gap-y-4 lg:basis-1/2`}>
                     <Link href='/' onClick={menuToggle}>
