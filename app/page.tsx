@@ -35,14 +35,14 @@ export default function Home() {
               Well, let&apos;s rewind the clock a bit, back to 2019 when I ventured into the world of college
               with almost zero background in computer science. I had my doubts, and I secretly wondered if I&apos;d drop out after
               the first semester.
-              <br />
+              <br /><br />
               Fast forward four years, and there I was, on a Thursday evening, tuning in to the Next.js conference, testing out the
               latest Astro.js, diving into Rust, and hitting up IT meetups and conferences. It&apos;s safe to say things worked out quite nicely!
-              <br />
+              <br /><br />
               See, when I first dipped my toes into the IT world, I had this idea that it was all about math, analytics, and logic.
               Don&apos;t get me wrong; I&apos;m not terrible at that stuff. It&apos;s just that I&apos;m also a creative soul,
               and I had this nagging worry that I&apos;d burn out eventually.
-
+              <br /><br />
               But over the years, I&apos;ve discovered that coding is more than just crunching numbers.
               It&apos;s a canvas for creativity. It&apos;s like having the best of both worlds: the
               freedom to express myself and the thrill of tackling brain-teasing problems.
