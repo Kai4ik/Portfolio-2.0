@@ -122,7 +122,7 @@ export default function Menu({ openMenu }: Props): JSX.Element {
                 </Link>
                 <li className="text-creamy transition-colors duration-300 ease-in-out">More is coming</li>
             </ul>
-            <div className="z-20 basis-full w-full lg:basis-1/2 flex flex-col gap-y-4 justify-start ">
+            <div className="z-20 w-full lg:basis-1/2 flex flex-col gap-y-4 justify-start ">
                 <Link href="/files/Kairat Orozobekov Resume.pdf" download target="_blank" className="w-full md:w-[40%]">
                     <Button content="Resume" />
                 </Link>
