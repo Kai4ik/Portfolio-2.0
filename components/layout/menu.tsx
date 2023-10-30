@@ -44,7 +44,7 @@ export default function Menu({ openMenu }: Props): JSX.Element {
     const particlesLoaded = useCallback(async (container: Container | undefined) => { }, []);
 
     return (
-        <div id="menuContainer" className={`fixed ${openMenu ? "top-0" : "-top-[120vh]"} transition-all duration-500 ease-linear h-screen overflow-y-scroll w-screen px-8 lg:px-[8vw] gap-y-8 bg-gradient-to-tr bg-dark z-[60] 
+        <div id="menuContainer" className={`fixed ${openMenu ? "top-0" : "-top-[200vh]"}  transition-all duration-500 ease-linear h-screen landscape:pt-[50vh] landscape:pb-16 landscape:lg:pt-0  overflow-y-scroll w-screen px-8 lg:px-[8vw] gap-y-8 bg-gradient-to-tr bg-dark z-[60] 
         flex flex-col lg:flex-row items-center justify-center lg:justify-between`}>
             <div className={`absolute top-0 w-full min-h-screen -mx-8 lg:-mx-[8vw]`}>
                 <Particles
@@ -115,18 +115,18 @@ export default function Menu({ openMenu }: Props): JSX.Element {
             </div>
             <ul className={`${kanitMB.className} w-full text-4xl z-20 uppercase flex flex-col gap-y-8 lg:gap-y-4 lg:basis-1/2`}>
                 <Link href='/' >
-                    <li className="text-creamy cursor-pointer hover:text-terracotta transition-colors duration-300 ease-in-out">home</li>
+                    <li className="text-creamy  md:text-center md:landscape:text-left cursor-pointer hover:text-terracotta transition-colors duration-300 ease-in-out">home</li>
                 </Link>
                 <Link href='/career-journey' >
-                    <li className="text-creamy cursor-pointer hover:text-terracotta transition-colors duration-300 ease-in-out">career journey</li>
+                    <li className="text-creamy md:text-center md:landscape:text-left cursor-pointer hover:text-terracotta transition-colors duration-300 ease-in-out">career journey</li>
                 </Link>
-                <li className="text-creamy transition-colors duration-300 ease-in-out">More is coming</li>
+                <li className="text-creamy md:text-center md:landscape:text-left transition-colors duration-300 ease-in-out">More is coming</li>
             </ul>
-            <div className="z-20 w-full lg:basis-1/2 flex flex-col gap-y-4 justify-start ">
+            <div className="z-20 w-full lg:basis-1/2 flex flex-col gap-y-4 items-start md:items-center md:landscape:items-start">
                 <Link href="/files/Kairat Orozobekov Resume.pdf" download target="_blank" className="w-full md:w-[40%]">
                     <Button content="Resume" />
                 </Link>
-                <div className="flex flex-col gap-y-4 w-full text-creamy ">
+                <div className="flex flex-col gap-y-4 w-full text-creamy items-start md:items-center md:landscape:items-start">
                     <p className={`text-4xl ${kanitMB.className}`}>Socials</p>
                     <div className='flex items-center gap-x-4 text-2xl'>
                         <Link href="https://github.com/Kai4ik" target='_blank' className='cursor-pointer hover:text-[#2B3137]'>
@@ -146,7 +146,7 @@ export default function Menu({ openMenu }: Props): JSX.Element {
                         </Link>
                     </div>
                 </div>
-            </div>
+            </div >
         </div >
     )
 }
