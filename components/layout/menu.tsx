@@ -44,7 +44,7 @@ export default function Menu({ openMenu }: Props): JSX.Element {
     const particlesLoaded = useCallback(async (container: Container | undefined) => { }, []);
 
     return (
-        <div id="menuContainer" className={`fixed ${openMenu ? "top-0" : "-top-full"} transition-all duration-500 ease-linear min-h-screen w-screen px-8 lg:px-[8vw] gap-y-8 bg-gradient-to-tr bg-dark z-[60] 
+        <div id="menuContainer" className={`fixed ${openMenu ? "top-0" : "-top-[120vh]"} transition-all duration-500 ease-linear min-h-screen w-screen px-8 lg:px-[8vw] gap-y-8 bg-gradient-to-tr bg-dark z-[60] 
         flex flex-col lg:flex-row items-center justify-center lg:justify-between`}>
             <div className={`absolute top-0 w-full min-h-screen -mx-8 lg:-mx-[8vw]`}>
                 <Particles
