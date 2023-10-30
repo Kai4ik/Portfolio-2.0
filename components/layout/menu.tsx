@@ -4,7 +4,7 @@
 import Link from 'next/link';
 
 // React specific
-import { Dispatch, SetStateAction, useCallback } from "react";
+import { useCallback } from "react";
 
 // fonts
 import { kanitMB } from "@/assets/fonts";
