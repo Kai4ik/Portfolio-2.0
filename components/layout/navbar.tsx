@@ -58,17 +58,16 @@ export default function Navbar(): JSX.Element {
         return () => window.removeEventListener("scroll", handleScroll);
     }, [handleScroll]);
 
-    const handleOpenMenu = () => {
+    const menuToggle = () => {
         setOpenMenu((prev) => !prev);
         const menu = document.getElementById("menuContainer");
         const hambBtnTopLine = document.getElementById("hambBtnTopLine");
         const hambBtnBottomLine = document.getElementById("hambBtnBottomLine");
         if (hambBtnTopLine && hambBtnBottomLine) {
-            hambBtnTopLine.classList.toggle("mb-2");
-            hambBtnTopLine.classList.toggle("rotate-45")
-            hambBtnBottomLine.classList.toggle("mt-2");
+            hambBtnTopLine.classList.toggle("mb-0");
+            hambBtnTopLine.classList.toggle("rotate-45");
+            hambBtnBottomLine.classList.toggle("-mt-[1px]");
             hambBtnBottomLine.classList.toggle("-rotate-45");
-            ;
         }
 
         if (menu) {
@@ -104,7 +103,7 @@ export default function Navbar(): JSX.Element {
             <div
                 id="hambBtn"
                 className="flex flex-col justify-center h-full cursor-pointer"
-                onClick={handleOpenMenu}
+                onClick={menuToggle}
             >
                 <div
                     id="hambBtnTopLine"
@@ -119,6 +118,6 @@ export default function Navbar(): JSX.Element {
             </div>
         </nav>
 
-        <Menu openMenu={openMenu} />
+        <Menu openMenu={openMenu} menuToggle={menuToggle} />
     </>
 }
