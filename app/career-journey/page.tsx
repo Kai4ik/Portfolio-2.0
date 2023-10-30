@@ -11,6 +11,7 @@ import GET_CAREER_JOURNEY_DATA from "@/queries/career-journey/experience";
 
 // Next.js specific
 import Image from "next/image";
+import Link from 'next/link';
 
 
 export default async function CareerJourney(): Promise<JSX.Element> {
@@ -25,7 +26,7 @@ export default async function CareerJourney(): Promise<JSX.Element> {
     const careerExperinces = data.careerExperiences;
 
     return (
-      <main className="w-screen  relative z-30">
+      <main className="w-screen  relative z-30 pt-16">
         <div className=" flex flex-col gap-y-8 lg:gap-y-16 px-8 lg:px-[8vw] pt-12 pb-[180px] lg:pb-[200px] w-full overflow-x-hidden text-creamy">
           <h3
             className={`${kanitMB.className} text-3xl text-american-yellow lg:text-5xl`}
@@ -38,7 +39,11 @@ export default async function CareerJourney(): Promise<JSX.Element> {
               {careerExperinces.map((experience) => (
                 <section key={experience.id} className="flex flex-col gap-y-12">
                   <div className="flex flex-col items-start justify-start gap-y-8 w-full">
-                    <h4 className={`text-4xl text-creamy font-semibold ${kanitMB.className}`}>{experience.companyName}</h4>
+                    {experience.companyLink ?
+                      <Link target="_blank" href={experience.companyLink}>
+                        <h4 className={`text-4xl underline-offset-8 underline hover:text-terracotta transition-colors duration-300 ease-out text-creamy font-semibold ${kanitMB.className}`}>{experience.companyName}</h4>
+                      </Link> :
+                      <h4 className={`text-4xl text-creamy font-semibold ${kanitMB.className}`}>{experience.companyName}</h4>}
                     <div className="flex flex-col gap-y-12 basis-full">
                       <div className="w-full flex flex-col gap-y-4">
                         <div className={`${latoReg.className}`}>
@@ -78,11 +83,13 @@ export default async function CareerJourney(): Promise<JSX.Element> {
                         </div>
                       </div>
                       {experience.photo && (
-                        <div className="relative w-full h-[50vh] md:w-[50%]  lg:h-[80vh] lg:w-[35%]">
+                        <div className="relative w-full h-[500px] md:w-[350px] md:h-[650px] lg:h-[600px] lg:w-[400px] 3xl:h-[800px] 3xl:w-[550px]">
                           <Image
-                            src={experience.photo}
+                            src={`https://res.cloudinary.com/dmcvpmmuh/image/upload/f_auto,q_auto/v1/${experience.photo}`}
                             alt="Kairat on Toronto FC game"
                             fill
+                            quality={100}
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 35vw"
                             className="object-cover fixed bottom-0 left-0"
                           />
                         </div>

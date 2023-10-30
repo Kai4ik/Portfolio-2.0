@@ -24,7 +24,7 @@ export default function CodingChroniclesSection(): JSX.Element {
         </p>
       </div>
       <div className="flex flex-col gap-y-8 lg:flex-row lg:flex-wrap lg:justify-between  lg:gap-y-16">
-        <div className="flex flex-col md:gap-y-8 lg:basis-[45%]">
+        <div className="flex flex-col md:gap-y-2 lg:gap-y-4 lg:basis-[45%]">
           <div className=" relative w-full h-[35vh] md:h-[50vh] ">
             <Image
               src="https://wakatime.com/share/@Kai4ik/5d13fc09-4404-40a1-aacf-c835bc2464d2.png"
@@ -33,13 +33,13 @@ export default function CodingChroniclesSection(): JSX.Element {
               className="object-contain absolute"
             />
           </div>
-          <p className={`${latoReg.className} text-lg relative`}>
+          <p className={`${latoReg.className} text-lg`}>
             Behold my weekly code-o-meter, tracking the hours I&apos;ve spent
             &apos;talking&apos; to my computer - my way of proving that I&apos;m
             in a committed relationship with my code!
           </p>
         </div>
-        <div className="flex flex-col md:gap-y-8 lg:basis-[45%]">
+        <div className="flex flex-col md:gap-y-2 lg:gap-y-4 lg:basis-[45%]">
           <div className=" relative w-full h-[35vh] md:h-[50vh] ">
             <span className="w-full h-[0.5px] bg-creamy lg:hidden"> </span>
             <Image
@@ -50,14 +50,14 @@ export default function CodingChroniclesSection(): JSX.Element {
             />
           </div>
 
-          <p className={`${latoReg.className} text-lg `}>
+          <p className={`${latoReg.className} text-lg`}>
             Explore my &apos;Language Mashup&apos; chart, a wild mixtape of
             coding languages, libraries, and frameworks I&apos;ve been jamming
             with this week – it&apos;s a musical symphony of tech notes!
           </p>
         </div>
-        <div className="flex flex-col md:gap-y-8 lg:basis-[45%]">
-          <div className=" relative w-full h-[35vh] md:h-[50vh] ">
+        <div className="flex flex-col md:gap-y-2 lg:gap-y-4 lg:basis-[45%]">
+          <div className="relative w-full h-[35vh] md:h-[50vh]">
             <span className="w-full h-[0.5px] bg-creamy lg:hidden"> </span>
             <Image
               src="https://wakatime.com/share/@Kai4ik/243c96f3-d6e1-4848-b1b9-7ece21e85720.png"
@@ -67,7 +67,7 @@ export default function CodingChroniclesSection(): JSX.Element {
             />
           </div>
 
-          <p className={`${latoReg.className} text-lg `}>
+          <p className={`${latoReg.className} text-lg`}>
             Dive into my &apos;IDEology&apos; chart, and you&apos;ll see my
             coding life isn&apos;t just about languages; it&apos;s a melodrama
             starring an ensemble cast of coding editors - my trusty companions

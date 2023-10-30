@@ -15,6 +15,7 @@ const GET_CAREER_JOURNEY_DATA = gql(`
         startDate
         present
         companyName
+        companyLink
     }
   }
 `);

@@ -700,7 +700,7 @@ export type BatchPayload = {
 export type CareerExperience = Node & {
   __typename?: 'CareerExperience';
   closeDate?: Maybe<Scalars['Date']['output']>;
-  companyLogo?: Maybe<Scalars['String']['output']>;
+  companyLink?: Maybe<Scalars['String']['output']>;
   companyName: Scalars['String']['output'];
   /** The time the document was created */
   createdAt: Scalars['DateTime']['output'];
@@ -796,7 +796,7 @@ export type CareerExperienceConnection = {
 
 export type CareerExperienceCreateInput = {
   closeDate?: InputMaybe<Scalars['Date']['input']>;
-  companyLogo?: InputMaybe<Scalars['String']['input']>;
+  companyLink?: InputMaybe<Scalars['String']['input']>;
   companyName: Scalars['String']['input'];
   createdAt?: InputMaybe<Scalars['DateTime']['input']>;
   description?: InputMaybe<Scalars['RichTextAST']['input']>;
@@ -858,25 +858,25 @@ export type CareerExperienceManyWhereInput = {
   closeDate_not?: InputMaybe<Scalars['Date']['input']>;
   /** All values that are not contained in given list. */
   closeDate_not_in?: InputMaybe<Array<InputMaybe<Scalars['Date']['input']>>>;
-  companyLogo?: InputMaybe<Scalars['String']['input']>;
+  companyLink?: InputMaybe<Scalars['String']['input']>;
   /** All values containing the given string. */
-  companyLogo_contains?: InputMaybe<Scalars['String']['input']>;
+  companyLink_contains?: InputMaybe<Scalars['String']['input']>;
   /** All values ending with the given string. */
-  companyLogo_ends_with?: InputMaybe<Scalars['String']['input']>;
+  companyLink_ends_with?: InputMaybe<Scalars['String']['input']>;
   /** All values that are contained in given list. */
-  companyLogo_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  companyLink_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   /** Any other value that exists and is not equal to the given value. */
-  companyLogo_not?: InputMaybe<Scalars['String']['input']>;
+  companyLink_not?: InputMaybe<Scalars['String']['input']>;
   /** All values not containing the given string. */
-  companyLogo_not_contains?: InputMaybe<Scalars['String']['input']>;
+  companyLink_not_contains?: InputMaybe<Scalars['String']['input']>;
   /** All values not ending with the given string */
-  companyLogo_not_ends_with?: InputMaybe<Scalars['String']['input']>;
+  companyLink_not_ends_with?: InputMaybe<Scalars['String']['input']>;
   /** All values that are not contained in given list. */
-  companyLogo_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  companyLink_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   /** All values not starting with the given string. */
-  companyLogo_not_starts_with?: InputMaybe<Scalars['String']['input']>;
+  companyLink_not_starts_with?: InputMaybe<Scalars['String']['input']>;
   /** All values starting with the given string. */
-  companyLogo_starts_with?: InputMaybe<Scalars['String']['input']>;
+  companyLink_starts_with?: InputMaybe<Scalars['String']['input']>;
   companyName?: InputMaybe<Scalars['String']['input']>;
   /** All values containing the given string. */
   companyName_contains?: InputMaybe<Scalars['String']['input']>;
@@ -1074,8 +1074,8 @@ export type CareerExperienceManyWhereInput = {
 export enum CareerExperienceOrderByInput {
   CloseDateAsc = 'closeDate_ASC',
   CloseDateDesc = 'closeDate_DESC',
-  CompanyLogoAsc = 'companyLogo_ASC',
-  CompanyLogoDesc = 'companyLogo_DESC',
+  CompanyLinkAsc = 'companyLink_ASC',
+  CompanyLinkDesc = 'companyLink_DESC',
   CompanyNameAsc = 'companyName_ASC',
   CompanyNameDesc = 'companyName_DESC',
   CreatedAtAsc = 'createdAt_ASC',
@@ -1104,7 +1104,7 @@ export enum CareerExperienceOrderByInput {
 
 export type CareerExperienceUpdateInput = {
   closeDate?: InputMaybe<Scalars['Date']['input']>;
-  companyLogo?: InputMaybe<Scalars['String']['input']>;
+  companyLink?: InputMaybe<Scalars['String']['input']>;
   companyName?: InputMaybe<Scalars['String']['input']>;
   description?: InputMaybe<Scalars['RichTextAST']['input']>;
   location?: InputMaybe<Scalars['String']['input']>;
@@ -1135,7 +1135,7 @@ export type CareerExperienceUpdateManyInlineInput = {
 
 export type CareerExperienceUpdateManyInput = {
   closeDate?: InputMaybe<Scalars['Date']['input']>;
-  companyLogo?: InputMaybe<Scalars['String']['input']>;
+  companyLink?: InputMaybe<Scalars['String']['input']>;
   companyName?: InputMaybe<Scalars['String']['input']>;
   description?: InputMaybe<Scalars['RichTextAST']['input']>;
   location?: InputMaybe<Scalars['String']['input']>;
@@ -1221,25 +1221,25 @@ export type CareerExperienceWhereInput = {
   closeDate_not?: InputMaybe<Scalars['Date']['input']>;
   /** All values that are not contained in given list. */
   closeDate_not_in?: InputMaybe<Array<InputMaybe<Scalars['Date']['input']>>>;
-  companyLogo?: InputMaybe<Scalars['String']['input']>;
+  companyLink?: InputMaybe<Scalars['String']['input']>;
   /** All values containing the given string. */
-  companyLogo_contains?: InputMaybe<Scalars['String']['input']>;
+  companyLink_contains?: InputMaybe<Scalars['String']['input']>;
   /** All values ending with the given string. */
-  companyLogo_ends_with?: InputMaybe<Scalars['String']['input']>;
+  companyLink_ends_with?: InputMaybe<Scalars['String']['input']>;
   /** All values that are contained in given list. */
-  companyLogo_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  companyLink_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   /** Any other value that exists and is not equal to the given value. */
-  companyLogo_not?: InputMaybe<Scalars['String']['input']>;
+  companyLink_not?: InputMaybe<Scalars['String']['input']>;
   /** All values not containing the given string. */
-  companyLogo_not_contains?: InputMaybe<Scalars['String']['input']>;
+  companyLink_not_contains?: InputMaybe<Scalars['String']['input']>;
   /** All values not ending with the given string */
-  companyLogo_not_ends_with?: InputMaybe<Scalars['String']['input']>;
+  companyLink_not_ends_with?: InputMaybe<Scalars['String']['input']>;
   /** All values that are not contained in given list. */
-  companyLogo_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  companyLink_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   /** All values not starting with the given string. */
-  companyLogo_not_starts_with?: InputMaybe<Scalars['String']['input']>;
+  companyLink_not_starts_with?: InputMaybe<Scalars['String']['input']>;
   /** All values starting with the given string. */
-  companyLogo_starts_with?: InputMaybe<Scalars['String']['input']>;
+  companyLink_starts_with?: InputMaybe<Scalars['String']['input']>;
   companyName?: InputMaybe<Scalars['String']['input']>;
   /** All values containing the given string. */
   companyName_contains?: InputMaybe<Scalars['String']['input']>;
@@ -1546,6 +1546,39 @@ export type DocumentVersion = {
   id: Scalars['ID']['output'];
   revision: Scalars['Int']['output'];
   stage: Stage;
+};
+
+/** An object with an ID */
+export type Entity = {
+  /** The id of the object. */
+  id: Scalars['ID']['output'];
+  /** The Stage of an object */
+  stage: Stage;
+};
+
+/** This enumeration holds all typenames that implement the Entity interface. Components implement the Entity interface. At the moment models are not supported, models are listed in this enum to avoid an empty enum without any components. */
+export enum EntityTypeName {
+  /** Asset system model */
+  Asset = 'Asset',
+  CareerExperience = 'CareerExperience',
+  HomePageToolkitSection = 'HomePageToolkitSection',
+  /** Scheduled Operation system model */
+  ScheduledOperation = 'ScheduledOperation',
+  /** Scheduled Release system model */
+  ScheduledRelease = 'ScheduledRelease',
+  ToolkitSubsection = 'ToolkitSubsection',
+  ToolkitTechnology = 'ToolkitTechnology',
+  /** User system model */
+  User = 'User'
+}
+
+/** Allows to specify input to query components directly */
+export type EntityWhereInput = {
+  /** The ID of an object */
+  id: Scalars['ID']['input'];
+  stage: Stage;
+  /** The Type name of an object */
+  typename: EntityTypeName;
 };
 
 export type HomePageToolkitSection = Node & {
@@ -2686,6 +2719,8 @@ export type Query = {
   careerExperiences: Array<CareerExperience>;
   /** Retrieve multiple careerExperiences using the Relay connection interface */
   careerExperiencesConnection: CareerExperienceConnection;
+  /** Fetches an object given its ID */
+  entities?: Maybe<Array<Entity>>;
   /** Retrieve a single homePageToolkitSection */
   homePageToolkitSection?: Maybe<HomePageToolkitSection>;
   /** Retrieve document version */
@@ -2790,6 +2825,11 @@ export type QueryCareerExperiencesConnectionArgs = {
   skip?: InputMaybe<Scalars['Int']['input']>;
   stage?: Stage;
   where?: InputMaybe<CareerExperienceWhereInput>;
+};
+
+
+export type QueryEntitiesArgs = {
+  where: Array<EntityWhereInput>;
 };
 
 
@@ -3995,7 +4035,7 @@ export enum SystemDateTimeFieldVariation {
   Localization = 'LOCALIZATION'
 }
 
-export type ToolkitSubsection = {
+export type ToolkitSubsection = Entity & {
   __typename?: 'ToolkitSubsection';
   /** The unique identifier */
   id: Scalars['ID']['output'];
@@ -4385,7 +4425,7 @@ export type ToolkitSubsectionWhereUniqueInput = {
   id?: InputMaybe<Scalars['ID']['input']>;
 };
 
-export type ToolkitTechnology = {
+export type ToolkitTechnology = Entity & {
   __typename?: 'ToolkitTechnology';
   confidenceLevel: ConfidenceLevel;
   iconClassName: Scalars['String']['output'];
@@ -5273,7 +5313,7 @@ export enum _SystemDateTimeFieldVariation {
 export type CareerJourneyPageDataQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type CareerJourneyPageDataQuery = { __typename?: 'Query', careerExperiences: Array<{ __typename?: 'CareerExperience', location?: string | null, closeDate?: any | null, id: string, photo?: string | null, positionTitle?: string | null, skills: Array<string>, startDate?: any | null, present?: boolean | null, companyName: string, description?: { __typename?: 'RichText', raw: any } | null }> };
+export type CareerJourneyPageDataQuery = { __typename?: 'Query', careerExperiences: Array<{ __typename?: 'CareerExperience', location?: string | null, closeDate?: any | null, id: string, photo?: string | null, positionTitle?: string | null, skills: Array<string>, startDate?: any | null, present?: boolean | null, companyName: string, companyLink?: string | null, description?: { __typename?: 'RichText', raw: any } | null }> };
 
 export type HomePageToolkitSectionDataQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -5281,5 +5321,5 @@ export type HomePageToolkitSectionDataQueryVariables = Exact<{ [key: string]: ne
 export type HomePageToolkitSectionDataQuery = { __typename?: 'Query', homePageToolkitSections: Array<{ __typename?: 'HomePageToolkitSection', subtitle: string, title: string, subsections: Array<{ __typename?: 'ToolkitSubsection', id: string, subtitle: string, title: string, listOfTechnologies: Array<{ __typename?: 'ToolkitTechnology', id: string, technologyName: string, iconClassName: string, confidenceLevel: ConfidenceLevel }> }> }> };
 
 
-export const CareerJourneyPageDataDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"CareerJourneyPageData"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"careerExperiences"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"orderBy"},"value":{"kind":"EnumValue","value":"order_ASC"}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"location"}},{"kind":"Field","name":{"kind":"Name","value":"closeDate"}},{"kind":"Field","name":{"kind":"Name","value":"description"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"raw"}}]}},{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"photo"}},{"kind":"Field","name":{"kind":"Name","value":"positionTitle"}},{"kind":"Field","name":{"kind":"Name","value":"skills"}},{"kind":"Field","name":{"kind":"Name","value":"startDate"}},{"kind":"Field","name":{"kind":"Name","value":"present"}},{"kind":"Field","name":{"kind":"Name","value":"companyName"}}]}}]}}]} as unknown as DocumentNode<CareerJourneyPageDataQuery, CareerJourneyPageDataQueryVariables>;
+export const CareerJourneyPageDataDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"CareerJourneyPageData"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"careerExperiences"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"orderBy"},"value":{"kind":"EnumValue","value":"order_ASC"}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"location"}},{"kind":"Field","name":{"kind":"Name","value":"closeDate"}},{"kind":"Field","name":{"kind":"Name","value":"description"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"raw"}}]}},{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"photo"}},{"kind":"Field","name":{"kind":"Name","value":"positionTitle"}},{"kind":"Field","name":{"kind":"Name","value":"skills"}},{"kind":"Field","name":{"kind":"Name","value":"startDate"}},{"kind":"Field","name":{"kind":"Name","value":"present"}},{"kind":"Field","name":{"kind":"Name","value":"companyName"}},{"kind":"Field","name":{"kind":"Name","value":"companyLink"}}]}}]}}]} as unknown as DocumentNode<CareerJourneyPageDataQuery, CareerJourneyPageDataQueryVariables>;
 export const HomePageToolkitSectionDataDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"HomePageToolkitSectionData"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"homePageToolkitSections"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"subtitle"}},{"kind":"Field","name":{"kind":"Name","value":"title"}},{"kind":"Field","name":{"kind":"Name","value":"subsections"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"subtitle"}},{"kind":"Field","name":{"kind":"Name","value":"title"}},{"kind":"Field","name":{"kind":"Name","value":"listOfTechnologies"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"first"},"value":{"kind":"IntValue","value":"50"}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"technologyName"}},{"kind":"Field","name":{"kind":"Name","value":"iconClassName"}},{"kind":"Field","name":{"kind":"Name","value":"confidenceLevel"}}]}}]}}]}}]}}]} as unknown as DocumentNode<HomePageToolkitSectionDataQuery, HomePageToolkitSectionDataQueryVariables>;

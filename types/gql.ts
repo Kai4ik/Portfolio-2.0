@@ -13,7 +13,7 @@ import { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/
  * Therefore it is highly recommended to use the babel or swc plugin for production.
  */
 const documents = {
-    "\n  query CareerJourneyPageData {\n    careerExperiences(orderBy: order_ASC) {\n        location\n        closeDate\n        description {\n            raw\n        }\n        id\n        photo\n        positionTitle\n        skills\n        startDate\n        present\n        companyName\n    }\n  }\n": types.CareerJourneyPageDataDocument,
+    "\n  query CareerJourneyPageData {\n    careerExperiences(orderBy: order_ASC) {\n        location\n        closeDate\n        description {\n            raw\n        }\n        id\n        photo\n        positionTitle\n        skills\n        startDate\n        present\n        companyName\n        companyLink\n    }\n  }\n": types.CareerJourneyPageDataDocument,
     "\n  query HomePageToolkitSectionData {\n    homePageToolkitSections {\n      subtitle\n      title\n      subsections {\n        id\n        subtitle\n        title\n        listOfTechnologies(first: 50) {\n          id\n          technologyName\n          iconClassName\n          confidenceLevel\n        }\n      }\n    }\n  }\n": types.HomePageToolkitSectionDataDocument,
 };
 
@@ -34,7 +34,7 @@ export function gql(source: string): unknown;
 /**
  * The gql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
-export function gql(source: "\n  query CareerJourneyPageData {\n    careerExperiences(orderBy: order_ASC) {\n        location\n        closeDate\n        description {\n            raw\n        }\n        id\n        photo\n        positionTitle\n        skills\n        startDate\n        present\n        companyName\n    }\n  }\n"): (typeof documents)["\n  query CareerJourneyPageData {\n    careerExperiences(orderBy: order_ASC) {\n        location\n        closeDate\n        description {\n            raw\n        }\n        id\n        photo\n        positionTitle\n        skills\n        startDate\n        present\n        companyName\n    }\n  }\n"];
+export function gql(source: "\n  query CareerJourneyPageData {\n    careerExperiences(orderBy: order_ASC) {\n        location\n        closeDate\n        description {\n            raw\n        }\n        id\n        photo\n        positionTitle\n        skills\n        startDate\n        present\n        companyName\n        companyLink\n    }\n  }\n"): (typeof documents)["\n  query CareerJourneyPageData {\n    careerExperiences(orderBy: order_ASC) {\n        location\n        closeDate\n        description {\n            raw\n        }\n        id\n        photo\n        positionTitle\n        skills\n        startDate\n        present\n        companyName\n        companyLink\n    }\n  }\n"];
 /**
  * The gql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */

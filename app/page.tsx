@@ -11,7 +11,7 @@ import PageScroller from "@/components/layout/pageScroller";
 
 export default function Home() {
   return (
-    <main className="w-screen  relative z-30">
+    <main className="w-screen  relative z-30 pt-16">
       <div className=" flex flex-col gap-y-8 lg:gap-y-16 px-8 lg:px-[8vw] pt-12 pb-[180px] lg:pb-[200px] w-full overflow-x-hidden text-creamy">
         <div className="flex flex-col gap-y-8 items-center lg:flex-row lg:gap-x-24">
           <div className="w-full h-[50vh] overflow-hidden relative md:w-[50%] lg:h-[80vh] lg:w-[40%] ">
