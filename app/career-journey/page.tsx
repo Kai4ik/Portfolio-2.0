@@ -38,7 +38,8 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: 'app',
+    card: "summary_large_image",
+    site: "@site",
     title: "Kairat Orozobekov's Work Experience",
     images: ['https://res.cloudinary.com/dmcvpmmuh/image/upload/f_auto,q_auto,w_1000,h_1000/v1/OK%20Portfolio%20Content/bnehthyjmavmc9sdppgb'],
     description: "Welcome to Kairat Orozobekov's portfolio website, the place where I proudly display my recent work experience and projects. Let's take a journey through my professional adventures!",
