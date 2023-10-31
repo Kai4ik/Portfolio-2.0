@@ -21,13 +21,15 @@ export default function Home() {
   return (
     <main className="w-screen  relative z-30 pt-16">
       <div className=" flex flex-col gap-y-8 lg:gap-y-16 px-8 lg:px-[8vw] pt-12 pb-[180px] lg:pb-[200px] w-full overflow-x-hidden text-creamy">
-        <div className="flex flex-col gap-y-8 items-center lg:flex-row lg:gap-x-24">
-          <div className="w-full h-[50vh] overflow-hidden relative md:w-[50%] lg:h-[80vh] lg:w-[40%] ">
+        <div className="flex flex-col gap-y-8 items-center justify-between lg:flex-row lg:gap-x-24">
+          <div className="relative w-full h-[500px] md:w-[400px] md:h-[600px] lg:w-[500px] 3xl:h-[900px] 3xl:w-[750px]">
             <Image
-              src="/images/HeroImg.jpg"
+              src="https://res.cloudinary.com/dmcvpmmuh/image/upload/f_auto,q_auto/v1/OK%20Portfolio%20Content/knxkomuibktmvpbc03ik"
               alt="Kairat on Toronto FC game"
               fill
-              className="object-cover fixed top-0"
+              quality={100}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 35vw"
+              className="object-cover fixed bottom-0 left-0"
             />
           </div>
           <div className="flex flex-col gap-y-4 lg:w-[50%]">
