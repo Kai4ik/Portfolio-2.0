@@ -39,7 +39,7 @@ export default function RootLayout({
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width" />
         <meta name="author" content="Kairat Orozobekov" />
-        <link rel="sitemap" href="/sitemap-index.xml" />
+        <link rel="sitemap" href="/sitemap.xml" />
         <link rel="canonical" href="https://kairatorozobekov.dev" />
       </head>
       <body className="w-screen bg-dark overflow-x-hidden">
