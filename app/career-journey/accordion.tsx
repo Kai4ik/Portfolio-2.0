@@ -46,7 +46,7 @@ export default function Accordion({ content }: Props): JSX.Element {
                 class: ({ children }) => <animated.div style={expandAnimation} className={` flex flex-col gap-y-4 transition-all ease-linear overflow-y-hidden`}>{children}</animated.div>
             }} />
         </div>
-        <div className='w-full lg:max-w-[40%]' onClick={() => setExpanded((prev) => !prev)}>
+        <div className='readMoreBtn w-full lg:max-w-[40%]' onClick={() => setExpanded((prev) => !prev)}>
             <Button content={`Read ${expanded ? "Less" : "More"} `} />
         </div>
     </div>

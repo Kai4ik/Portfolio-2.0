@@ -45,7 +45,7 @@ export default async function CareerJourney(): Promise<JSX.Element> {
                 <section key={experience.id} className="flex flex-col gap-y-12">
                   <div className="flex flex-col items-start justify-start gap-y-8 w-full">
                     {experience.companyLink ?
-                      <Link target="_blank" href={experience.companyLink}>
+                      <Link target="_blank" href={experience.companyLink} className="companyLink">
                         <h4 className={`text-4xl underline-offset-8 underline hover:text-terracotta transition-colors duration-300 ease-out text-creamy font-semibold ${kanitMB.className}`}>{experience.companyName}</h4>
                       </Link> :
                       <h4 className={`text-4xl text-creamy font-semibold ${kanitMB.className}`}>{experience.companyName}</h4>}

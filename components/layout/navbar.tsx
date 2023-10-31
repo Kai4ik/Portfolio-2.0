@@ -101,6 +101,8 @@ export default function Navbar(): JSX.Element {
                 />
             </div>
             <div
+                role="button"
+                aria-label={openMenu ? "Close Menu" : "Open Menu"}
                 id="hambBtn"
                 className="flex flex-col justify-center h-full cursor-pointer"
                 onClick={menuToggle}

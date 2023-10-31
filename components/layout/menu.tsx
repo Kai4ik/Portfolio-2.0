@@ -127,7 +127,7 @@ export default function Menu({ openMenu, menuToggle }: Props): JSX.Element {
                     <li className="text-creamy md:text-center md:landscape:text-left transition-colors duration-300 ease-in-out">More is coming</li>
                 </ul>
                 <div className="z-20 w-full lg:basis-1/2 flex flex-col gap-y-4 items-start md:items-center md:landscape:items-start">
-                    <Link href="/files/Kairat Orozobekov Resume.pdf" download target="_blank" className="w-full md:w-[40%]">
+                    <Link href="/files/Kairat Orozobekov Resume.pdf" download target="_blank" className="w-full md:w-[40%]" id="resumeDownloadBtn">
                         <Button content="Resume" />
                     </Link>
                     <div className="flex flex-col gap-y-4 w-full text-creamy items-start md:items-center md:landscape:items-start">
