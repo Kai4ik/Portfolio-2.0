@@ -27,7 +27,8 @@ export const metadata: Metadata = {
       {
         url: 'https://res.cloudinary.com/dmcvpmmuh/image/upload/f_auto,q_auto,w_600,h_600/v1/OK%20Portfolio%20Content/bnehthyjmavmc9sdppgb',
         width: 600,
-        height: 600
+        height: 600,
+        alt: 'Kairat Orozobekov Photo'
       },
       {
         url: 'https://res.cloudinary.com/dmcvpmmuh/image/upload/f_auto,q_auto,w_1000,h_1000/v1/OK%20Portfolio%20Content/bnehthyjmavmc9sdppgb',
