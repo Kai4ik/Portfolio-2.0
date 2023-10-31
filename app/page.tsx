@@ -14,6 +14,33 @@ import PageScroller from "@/components/layout/pageScroller";
 export const metadata: Metadata = {
   title: 'Kairat Orozobekov - Software Developer / Data Engineer based in Toronto',
   description: "Welcome to Kairat Orozobekov's portfolio website, the place where I proudly display my recent work experience and projects. Let's take a journey through my professional adventures!",
+  openGraph: {
+    title: 'Kairat Orozobekov - Software Developer / Data Engineer based in Toronto',
+    description: "Welcome to Kairat Orozobekov's portfolio website, the place where I proudly display my recent work experience and projects. Let's take a journey through my professional adventures!",
+    url: 'https://kairatorozobekov.dev',
+    siteName: 'Kairat Orozobekov Portfolio',
+    type: 'website',
+    images: [
+      {
+        url: 'https://res.cloudinary.com/dmcvpmmuh/image/upload/f_auto,q_auto,w_600,h_600/v1/OK%20Portfolio%20Content/bnehthyjmavmc9sdppgb',
+        width: 600,
+        height: 600,
+        alt: 'Kairat Orozobekov Photo',
+      },
+      {
+        url: 'https://res.cloudinary.com/dmcvpmmuh/image/upload/f_auto,q_auto,w_1000,h_1000/v1/OK%20Portfolio%20Content/bnehthyjmavmc9sdppgb',
+        width: 1000,
+        height: 1000,
+        alt: 'Kairat Orozobekov Photo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'app',
+    title: 'Kairat Orozobekov - Software Developer / Data Engineer based in Toronto',
+    images: ['https://res.cloudinary.com/dmcvpmmuh/image/upload/f_auto,q_auto,w_1000,h_1000/v1/OK%20Portfolio%20Content/bnehthyjmavmc9sdppgb'],
+    description: "Welcome to Kairat Orozobekov's portfolio website, the place where I proudly display my recent work experience and projects. Let's take a journey through my professional adventures!",
+  },
 }
 
 
