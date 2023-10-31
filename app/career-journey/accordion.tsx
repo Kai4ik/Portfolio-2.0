@@ -17,13 +17,14 @@ import Button from '@/components/reusable/button';
 
 
 interface Props {
+    companyName: string;
     content?: {
         __typename?: "RichText" | undefined;
         raw: any;
     } | null | undefined
 }
 
-export default function Accordion({ content }: Props): JSX.Element {
+export default function Accordion({ content, companyName }: Props): JSX.Element {
     const [expanded, setExpanded] = useState(false)
 
     const expandAnimation = useSpring({
@@ -46,7 +47,7 @@ export default function Accordion({ content }: Props): JSX.Element {
                 class: ({ children }) => <animated.div style={expandAnimation} className={` flex flex-col gap-y-4 transition-all ease-linear overflow-y-hidden`}>{children}</animated.div>
             }} />
         </div>
-        <div className='readMoreBtn w-full lg:max-w-[40%]' onClick={() => setExpanded((prev) => !prev)}>
+        <div id={companyName} className='readMoreBtn w-full lg:max-w-[40%]' onClick={() => setExpanded((prev) => !prev)}>
             <Button content={`Read ${expanded ? "Less" : "More"} `} />
         </div>
     </div>

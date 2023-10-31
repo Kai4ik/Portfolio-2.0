@@ -133,19 +133,19 @@ export default function Menu({ openMenu, menuToggle }: Props): JSX.Element {
                     <div className="flex flex-col gap-y-4 w-full text-creamy items-start md:items-center md:landscape:items-start">
                         <p className={`text-4xl ${kanitMB.className}`}>Socials</p>
                         <div className='flex items-center gap-x-4 text-2xl'>
-                            <Link href="https://github.com/Kai4ik" target='_blank' className='cursor-pointer hover:text-[#2B3137]'>
+                            <Link href="https://github.com/Kai4ik" target='_blank' className='socialLink cursor-pointer hover:text-[#2B3137]' id="Github">
                                 <FontAwesomeIcon icon={faGithub} />
                             </Link>
-                            <Link href="https://www.instagram.com/egoist.ko/" target='_blank' className='cursor-pointer hover:text-[#D62976]'>
+                            <Link href="https://www.instagram.com/egoist.ko/" target='_blank' className='socialLink cursor-pointer hover:text-[#D62976]' id="Instagram">
                                 <FontAwesomeIcon icon={faInstagram} />
                             </Link>
-                            <Link href="https://www.linkedin.com/in/kai-orozobekov/" target='_blank' className='cursor-pointer hover:text-[#0077B5]'>
+                            <Link href="https://www.linkedin.com/in/kai-orozobekov/" target='_blank' className='socialLink cursor-pointer hover:text-[#0077B5]' id="LinkedIn">
                                 <FontAwesomeIcon icon={faLinkedinIn} />
                             </Link>
-                            <Link href="https://medium.com/@kai4ik" target='_blank' className='cursor-pointer hover:text-[#FFC017]'>
+                            <Link href="https://medium.com/@kai4ik" target='_blank' className='socialLink cursor-pointer hover:text-[#FFC017]' id="Medium">
                                 <BsMedium />
                             </Link>
-                            <Link href="https://dev.to/kairatorozobekov" target='_blank' className='cursor-pointer hover:text-[#353A40]'>
+                            <Link href="https://dev.to/kairatorozobekov" target='_blank' className='socialLink cursor-pointer hover:text-[#353A40]' id="Dev.to">
                                 <FaDev />
                             </Link>
                         </div>

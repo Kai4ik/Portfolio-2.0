@@ -101,7 +101,7 @@ export default async function CareerJourney(): Promise<JSX.Element> {
                       )}
                     </div>
                   </div>
-                  <Accordion content={experience.description} />
+                  <Accordion content={experience.description} companyName={experience.companyName} />
                 </section>
               ))}
             </div>
